@@ -11,7 +11,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Load distance matrices
 ```{r}
-setwd('/Users/emilywork/Documents/GitHub/StrigaWGS/')
+#setwd("/Users/ebellis/Documents/GitHub/StrigaWGS/")
 library(tidyverse)
 
 k21 <- read.table("k21.mash.out", header=F)
@@ -26,8 +26,11 @@ meta$Site <- as.factor(str_replace(meta$Site, "2","") %>% str_trim())
 meta <- meta %>% filter(SampleID %in% unique(k21$S1))
 
 list5per <- filter(meta, Site != "Kisii" & Site != "HomaBay")$SampleID
-list5perkh <- filter(meta, SampleID =="SH130" | "SH134"|"SH138"| "SH139"|"SH146"|"SH124"|"SH117"|"SH113"|"SH111"|"SH104")
-k21 <- as.matrix(k21 %>% pivot_wider(names_from = S2, values_from = dist) %>%
+list5perkh <- filter(meta, SampleID =="SH130" | SampleID =="SH134"|SampleID =="SH138"| SampleID =="SH139"|SampleID =="SH146"|SampleID =="SH124"|SampleID =="SH117"|SampleID =="SH113"|SampleID =="SH111"|SampleID =="SH104")$SampleID
+#k21[c(list5per,list5perkh),]
+#list5 <- c(list5per,list5perkh)
+
+#k21 <- as.matrix(k21 %>% pivot_wider(names_from = S2, values_from = dist) %>%
                    column_to_rownames(var="S1")
 )
 ```
