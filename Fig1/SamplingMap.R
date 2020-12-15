@@ -16,15 +16,25 @@ library(jcolors)
 #setwd('/Users/emilybellis/Documents/GitHub/StrigaWGS/')
 
 ## load in data points from sampling
-modern <- read.csv("Striga_GPS.csv", header=T)
+modern <- read.csv("Striga_GPS_sequenced.csv", header=T)
 modern <- modern %>% dplyr::select(Lat, Lon, Site, Host) %>% unique()
 modern$Site <- as.factor(str_replace(modern$Site, "2","") %>% str_trim())
+
+# gps coordinates for ancient samples
+herb <- read.csv('Striga_GPS_sequenced_Berlin.csv', header=T, nrow=5)
+herb <- herb %>% select(Lat, Lon)
+herb$Site <- c("Kisii","Homa Bay","Muhoroni","Maranda","Fort Ternan")
+herb$Host <- c("maize","maize","sugarcane","sorghum","NA")
+
 # subset to 68 sequenced
 modern_df <- SpatialPointsDataFrame(cbind.data.frame(modern$Lon, modern$Lat),modern,proj4string = CRS("+proj=longlat"))
 mod_bb <- st_bbox(modern_df)
 mod_bb <- mod_bb + c(-0.15,-0.15,0.15,0.15)
 sg <- bb_poly(mod_bb)
 asp <- (mod_bb$ymax - mod_bb$ymin)/(mod_bb$xmax - mod_bb$xmin)
+
+
+
 
 ## main map: Kenya
 kenya<-getData("GADM", country="KE", level=1)
