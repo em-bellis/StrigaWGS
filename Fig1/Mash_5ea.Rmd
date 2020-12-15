@@ -60,6 +60,6 @@ ggplot(tmp2, aes(x=Axis1, y=Axis2, col=Site, pch=Host)) +
   geom_point(size=2.5, alpha=0.7) + 
   theme_classic() +
   xlab(paste0("Axis1(",round(tmp$Broken_stick[1],3)*100,"%)")) +
-  ylab(paste0("Axis1(",round(tmp$Broken_stick[2],3)*100,"%)")) +
+  ylab(paste0("Axis2(",round(tmp$Broken_stick[2],3)*100,"%)")) +
   scale_color_manual(values=c("orange2", "Blue","skyblue","tomato2","magenta2","gold"))
 ```
