@@ -1,0 +1,20 @@
+SampleID	Site	Host	Lat	Lon	Voucher	CollectionDate
+
+StHe_K57	Kenya, Kisii	maize	-0.6833306	34.766636	K090865157	9/1933	
+
+StHe_K58	Kenya, Homa Bay	maize	-0.52731	34.45714	K000865156	7/7/1958
+
+StHe_K61	Kenya, Muhoroni	maize, sugar, mtama	-0.15406	35.19878	K000865161	9/1925
+
+StHe_K64	Kenya, Maranda	sorghum	-0.13333333	34.16667	K000865161	13/12/1964
+
+StHe_K69	Kenya, Fort Ternan	roadside	-0.19999992	35.3499986	K0V0899162	28/8/1969
+
+StHe_Bk86	Burkina Faso, Boromo Boromo			K000483418	06/10/1986
+
+StHe_M86	Mali, Koutiala-Central Coco				K000483416	28/09/1986
+
+StHe_SH93	Burkina Faso				WAG0203893	1986
+		
+StHe_SH57	Burkina Faso				WAG0046657	1996
+
