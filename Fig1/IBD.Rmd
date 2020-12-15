@@ -38,7 +38,7 @@ geomat <- as.dist(geomat)
 # run mantel test
 ```{r}
 ibd <- mantel.randtest(k21.dist,geomat)
-plot(ibd) # significant IBD
+plot(ibd) # significant IBD, p=0.003
 ```
 
 # is this due to clines or clusters?
