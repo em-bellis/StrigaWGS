@@ -22,7 +22,7 @@ modern$Site <- as.factor(str_replace(modern$Site, "2","") %>% str_trim())
 # subset to 68 sequenced
 modern_df <- SpatialPointsDataFrame(cbind.data.frame(modern$Lon, modern$Lat),modern,proj4string = CRS("+proj=longlat"))
 mod_bb <- st_bbox(modern_df)
-mod_bb <- mod_bb + c(-0.25,-0.25,0.25,0.25)
+mod_bb <- mod_bb + c(-0.15,-0.15,0.15,0.15)
 sg <- bb_poly(mod_bb)
 asp <- (mod_bb$ymax - mod_bb$ymin)/(mod_bb$xmax - mod_bb$xmin)
 
@@ -39,7 +39,7 @@ sub_world_sp <- as(sub_world, 'Spatial')
 mainmap <- tm_shape(kenya_smooth, bbox=mod_bb) +
   tm_polygons() +
 tm_shape(modern_df) + 
-  tm_bubbles(size=0.25, col="Site", alpha=0.7, jitter=0.08, palette=jcolors(palette="pal5")) +
+  tm_symbols(size=0.7, col="Site", alpha=0.7, jitter=0.1, palette=jcolors(palette="pal5"), shape="Host") +
   tm_legend(show=FALSE) +
 tm_scale_bar(position = c("left","bottom"))
 
@@ -62,5 +62,5 @@ h <- asp2 * w
 vp <- viewport(x=0.97, y=0.45, width = w, height=h, just=c("right", "top"))
 
 tmap_save(mainmap,filename="sampling.png",
-          dpi=100, insets_tm=africa_inset, insets_vp=vp,
+          dpi=300, insets_tm=africa_inset, insets_vp=vp,
           height=asp*91, width=91, units="mm")

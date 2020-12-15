@@ -13,6 +13,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ```{r}
 #setwd("/Users/ebellis/Documents/GitHub/StrigaWGS/")
 library(tidyverse)
+library(jcolors)
 
 k21 <- read.table("k21.mash.out", header=F)
 k21 <- k21 %>% select(1:3)
@@ -56,10 +57,15 @@ meta$Site <- as.factor(str_replace(meta$Site, "2","") %>% str_trim())
 meta <- meta %>% select(SampleID, Site, Host)
 tmp2 <- inner_join(meta, tmp2)
 
-ggplot(tmp2, aes(x=Axis1, y=Axis2, col=Site, pch=Host)) + 
+p <- ggplot(tmp2, aes(x=Axis1, y=Axis2, col=Site, pch=Host)) + 
   geom_point(size=2.5, alpha=0.7) + 
   theme_classic() +
   xlab(paste0("Axis1(",round(tmp$Broken_stick[1],3)*100,"%)")) +
   ylab(paste0("Axis2(",round(tmp$Broken_stick[2],3)*100,"%)")) +
-  scale_color_manual(values=c("orange2", "Blue","skyblue","tomato2","magenta2","gold"))
+  scale_color_manual(values=c("#628395","#C5D86D","#DB2763","#17377A","#FC471E","#55DDE0")) +
+  theme(legend.position="None")
+
+pdf("Fig1B.pdf", height=3, width=3)
+p
+dev.off()
 ```

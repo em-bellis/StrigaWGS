@@ -53,10 +53,14 @@ meta$Site <- as.factor(str_replace(meta$Site, "2","") %>% str_trim())
 meta <- meta %>% select(SampleID, Site, Host)
 tmp2 <- inner_join(meta, tmp2)
 
-ggplot(tmp2, aes(x=Axis1, y=Axis2, col=Site, pch=Host)) + 
+p <- ggplot(tmp2, aes(x=Axis1, y=Axis2, col=Site, pch=Host)) + 
   geom_point(size=2.5, alpha=0.7) + 
   theme_classic() +
   xlab(paste0("Axis1(",round(tmp$Broken_stick[1],3)*100,"%)")) +
-  ylab(paste0("Axis1(",round(tmp$Broken_stick[2],3)*100,"%)")) +
-  scale_color_manual(values=c("Blue","tomato2"))
+  ylab(paste0("Axis2(",round(tmp$Broken_stick[2],3)*100,"%)")) +
+  scale_color_manual(values=c("#C5D86D","#17377A"))
+
+pdf(file="Fig1_C.pdf",width=3,height=3)
+p + theme(legend.position = "none")
+dev.off()
 ```
