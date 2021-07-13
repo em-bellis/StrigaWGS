@@ -10,8 +10,6 @@ for line in inKmers:
     outKmers.write(f'{line.strip()}\n')
     outKmers.write(f'+\n')
     outKmers.write(f'{"Z"*31}\n')
-    count += 1
-    
 
 inKmers.close()
 outKmers.close()
