@@ -1,0 +1,16 @@
+Kmer	hitPGPP	hitSh	Desc
+0	StHeBC4_p_c26811_g0_i3	Sh14Contig_5850	lipid-a-disaccharide synthase-like
+4	None	Sh14Contig_37747	lipid-a-disaccharide synthase-like
+8	None	Sh14Contig_44696	lipid-a-disaccharide synthase-like
+13	StHeBC4_p_c12903_g35328_i2	Sh14Contig_229	retrotransposon gag protein
+15	StHeBC4_p_c12587_g2_i1	Sh14Contig_28742	disease-resistance protein SGT1
+16	None	Sh14Contig_5301	disease-resistance protein SGT1
+17	None	Sh14Contig_37747	disease-resistance protein SGT1
+22	None	Sh14Contig_60980	hypothetical protein ASPNIDRAFT_144168
+23	StHeBC4_u_c25350_g11_i1	Sh14Contig_78939	hypothetical protein ASPNIDRAFT_144168
+27	None	Sh14Contig_41198	hypothetical protein ASPNIDRAFT_144168
+34	None	Sh14Contig_32559	hypothetical protein ASPNIDRAFT_144168
+36	StHeBC4_u_c12903_g30818_i7	Sh14Contig_35967	hypothetical protein ASPNIDRAFT_144168
+38	None	Sh14Contig_47805	hypothetical protein ASPNIDRAFT_144168
+29	StHeBC4_p_c12903_g42998_i1	None	None
+31	StHeBC4_p_c9824_g0_i1	None	None

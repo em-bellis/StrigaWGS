@@ -14,9 +14,11 @@ for (i in 1:2) {
 }
 
 ### graph Gst
-ggplot(gst_all, aes(x = GST, col = pop)) +
+p <- ggplot(gst_all, aes(x = GST, col = pop)) +
   geom_density() +
-  theme_classic()
+  theme_classic() +
+  xlab(expression(italic(G[ST]))) +
+  scale_colour_discrete(name = "Population", labels = c("Homa Bay", "Kisii"))
 
 nrow(subset(gst_all, GST >= 0.5 & pop == "kisii"))/nrow(subset(gst_all, pop == "kisii")) # 4% of kisii kmers
 nrow(subset(gst_all, GST >= 0.5 & pop == "homabay"))/nrow(subset(gst_all, pop == "homabay")) # 0.6% of homa bay kmers
@@ -26,3 +28,7 @@ kisii_kmer_list <- subset(gst_all, pop == "kisii" & GST >= 0.5)$kmer
 homabay_kmer_list <- subset(gst_all, pop == "homabay" & GST >= 0.5)$kmer
 write.table(kisii_kmer_list, "kisii_kmers_GST5.txt", row.names = F, col.names = F, sep = "\t", quote = F)
 write.table(homabay_kmer_list, "homabay_kmers_GST5.txt", row.names = F, col.names = F, sep = "\t", quote = F)
+
+pdf("kmerdist.pdf", width = 3, height = 3)
+p
+dev.off()

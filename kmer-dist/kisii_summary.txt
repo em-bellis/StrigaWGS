@@ -1,0 +1,241 @@
+Kmer	hitPGPP	hitSh	Desc
+2	None	Sh14Contig_45649	None
+5	StHeBC4_u_c12903_g32907_i4	Sh14Contig_20178	probable nicotinate-nucleotide pyrophosphorylase
+6	StHeBC4_u_c12903_g22013_i6	Sh14Contig_24947	None
+9	StHeBC4_u_c3941_g0_i1	Sh14Contig_42609	hypothetical protein VITISV_012016
+11	None	Sh14Contig_70490	None
+17	StHeBC4_u_c12903_g34431_i1	Sh14Contig_17925	upf0326 protein at4g17486-like
+18	StHeBC4_p_c12903_g35474_i1	Sh14Contig_4481	None
+22	StHeBC4_u_c24490_g2_i1	Sh14Contig_81114	None
+23	StHeBC4_p_c12903_g14638_i24	Sh14Contig_23122	far-red impaired response protein
+24	StHeBC4_u_c12903_g34431_i2	Sh14Contig_17925	upf0326 protein at4g17486-like
+27	StHeBC4_u_c12903_g19156_i3	Sh14Contig_3012	alcohol dehydrogenase homolog
+30	StHeBC4_p_c26043_g0_i2	Sh14Contig_13886	omega-amidase nit2
+33	StHeBC4_p_c12903_g10585_i1	Sh14Contig_34611	None
+43	None	Sh14Contig_20326	None
+44	StHeBC4_p_c12903_g6756_i1	Sh14Contig_12790	None
+45	StHeBC4_u_c12903_g15860_i5	Sh14Contig_29096	None
+48	StHeBC4_u_c12903_g7220_i1	Sh14Contig_60050	None
+54	None	Sh14Contig_3989	None
+56	StHeBC4_p_c12903_g2276_i2	Sh14Contig_4881	rna polymerase ii c-terminal domain phosphatase-like 1-like
+62	StHeBC4_u_c12903_g1840_i3	Sh14Contig_19406	e3 ubiquitin-protein ligase ring1-like
+63	None	Sh14Contig_71030	None
+65	StHeBC4_p_c12903_g39698_i9	Sh14Contig_45458	gag-protease polyprotein
+70	StHeBC4_u_c12903_g32907_i12	Sh14Contig_81511	None
+73	StHeBC4_u_c12903_g34427_i1	Sh14Contig_46360	None
+75	StHeBC4_p_c12903_g35474_i1	Sh14Contig_4481	None
+76	StHeBC4_p_c12903_g11444_i1	Sh14Contig_40193	polyprotein
+77	StHeBC4_u_c19051_g0_i1	Sh14Contig_66323	None
+78	StHeBC4_p_c12903_g10585_i1	Sh14Contig_12790	None
+80	StHeBC4_u_c12903_g1736_i4	Sh14Contig_28260	None
+83	None	Sh14Contig_31117	PREDICTED: uncharacterized protein LOC100256114
+85	StHeBC4_u_c12903_g33489_i1	Sh14Contig_51019	None
+86	StHeBC4_p_c16693_g0_i2	Sh14Contig_33691	hypothetical protein VITISV_018984
+87	StHeBC4_p_c23323_g2_i3	Sh14Contig_3290	diphthamide biosynthesis protein 2-like
+90	StHeBC4_p_c18975_g7_i10	Sh14Contig_7369	None
+94	StHeBC4_p_c12903_g4626_i6	Sh14Contig_4698	retrotransposon protein
+98	None	Sh14Contig_80867	None
+115	StHeBC4_h_c11261_g0_i2	Sh14Contig_13520	chemocyanin precursor
+117	StHeBC4_p_c23585_g1_i4	Sh14Contig_1911	None
+119	StHeBC4_p_c24979_g0_i1	Sh14Contig_4792	97 kda heat shock protein
+121	StHeBC4_h_c12903_g23955_i1	Sh14Contig_45458	gag-protease polyprotein
+123	StHeBC4_u_c12903_g1547_i1	Sh14Contig_68469	None
+126	None	Sh14Contig_48379	None
+128	StHeBC4_p_c12903_g30160_i1	Sh14Contig_57886	None
+129	None	Sh14Contig_64011	None
+130	None	Sh14Contig_1642	retrotransposon ty1-copia subclass
+131	StHeBC4_p_c22011_g3_i2	Sh14Contig_15531	wd repeat-containing protein 26-like
+134	StHeBC4_p_c12903_g7195_i9	Sh14Contig_60490	unnamed protein product
+140	StHeBC4_h_c24484_g1_i2	Sh14Contig_42033	hypothetical protein VITISV_042364
+142	StHeBC4_p_c20621_g7_i3	Sh14Contig_4748	gag-pol precursor
+146	StHeBC4_u_c12903_g27039_i4	Sh14Contig_4713	pectin methylesterase
+147	StHeBC4_p_c18975_g7_i5	Sh14Contig_7369	None
+149	None	Sh14Contig_65419	None
+153	StHeBC4_u_c12903_g32907_i15	Sh14Contig_29096	None
+160	None	Sh14Contig_52781	None
+166	StHeBC4_p_c12903_g208_i2	Sh14Contig_7920	None
+169	StHeBC4_p_c12903_g22741_i4	Sh14Contig_9532	pattern formation
+174	StHeBC4_p_c12903_g38175_i2	Sh14Contig_17588	ring zinc finger ankyrin protein
+175	None	Sh14Contig_4395	unnamed protein product [Vitis vinifera]
+180	StHeBC4_u_c12903_g34427_i3	Sh14Contig_46360	None
+181	StHeBC4_h_c11261_g0_i1	Sh14Contig_13520	chemocyanin precursor
+184	StHeBC4_h_c12903_g40212_i2	Sh14Contig_24771	copia ltr rider
+187	StHeBC4_p_c13584_g0_i1	Sh14Contig_33358	None
+190	StHeBC4_u_c12903_g16409_i3	Sh14Contig_576	atp-dependent helicase brm-like
+191	StHeBC4_h_c11483_g0_i1	Sh14Contig_55439	FAR1; Zinc finger, SWIM-type
+192	StHeBC4_p_c12903_g20722_i11	Sh14Contig_28640	PREDICTED: uncharacterized protein LOC100854178, partial
+193	StHeBC4_h_c12903_g12703_i2	Sh14Contig_9184	photosystem ii cp43 chlorophyll apoprotein
+197	StHeBC4_p_c12903_g2185_i1	Sh14Contig_12790	None
+198	StHeBC4_p_c12903_g34644_i1	Sh14Contig_4585	trehalose-phosphatase synthase 2
+200	StHeBC4_p_c24106_g0_i1	Sh14Contig_40210	None
+201	StHeBC4_h_c18968_g1_i5	Sh14Contig_1642	retrotransposon ty1-copia subclass
+202	StHeBC4_u_c3088_g0_i1	Sh14Contig_31622	None
+203	StHeBC4_u_c12903_g35782_i1	Sh14Contig_27773	None
+209	None	Sh14Contig_23637	None
+210	StHeBC4_u_c19051_g0_i1	Sh14Contig_63267	None
+211	None	Sh14Contig_11046	uncharacterized protein loc100253271
+217	StHeBC4_u_c12903_g27691_i1	Sh14Contig_35466	None
+218	StHeBC4_u_c22214_g0_i6	Sh14Contig_43769	None
+223	StHeBC4_u_c12903_g1736_i12	Sh14Contig_28260	None
+225	None	Sh14Contig_58406	None
+230	StHeBC4_u_c26755_g1_i1	Sh14Contig_68980	None
+231	StHeBC4_p_c26987_g0_i1	Sh14Contig_48	6-4 photolyase
+232	StHeBC4_u_c16917_g1_i1	Sh14Contig_50405	None
+234	StHeBC4_u_c22344_g0_i6	Sh14Contig_813	thaumatin-like protein
+236	StHeBC4_u_c12903_g699_i2	Sh14Contig_58790	None
+244	StHeBC4_p_c12903_g14484_i1	Sh14Contig_12513	None
+245	StHeBC4_p_c9911_g3_i3	Sh14Contig_54171	predicted protein
+247	None	Sh14Contig_7920	None
+251	StHeBC4_u_c12903_g34427_i8	Sh14Contig_46360	None
+252	StHeBC4_p_c12903_g35474_i1	Sh14Contig_4481	None
+254	None	Sh14Contig_43642	None
+256	StHeBC4_u_c12903_g15888_i3	Sh14Contig_81511	None
+259	StHeBC4_p_c24979_g1_i1	Sh14Contig_4792	97 kda heat shock protein
+260	StHeBC4_p_c12903_g14483_i5	Sh14Contig_16250	tcp transcription factor 13
+261	StHeBC4_p_c12903_g6756_i1	Sh14Contig_12790	None
+262	StHeBC4_p_c12903_g10875_i1	Sh14Contig_20081	beta-glucan-binding protein
+263	StHeBC4_p_c17648_g0_i3	Sh14Contig_15582	e3 ubiquitin-protein ligase upl3
+267	StHeBC4_u_c12903_g22225_i1	Sh14Contig_48959	None
+268	None	Sh14Contig_45784	None
+269	None	Sh14Contig_75797	None
+278	StHeBC4_u_c12903_g11727_i4	Sh14Contig_4041	None
+279	StHeBC4_p_c23083_g3_i1	Sh14Contig_37240	None
+288	None	Sh14Contig_5997	None
+289	None	Sh14Contig_67788	None
+290	StHeBC4_p_c12903_g6756_i1	Sh14Contig_1062	None
+292	StHeBC4_u_c12903_g11833_i1	Sh14Contig_14842	None
+294	StHeBC4_p_c12903_g6700_i3	Sh14Contig_43681	hypothetical protein VITISV_013115
+295	StHeBC4_p_c20608_g0_i7	Sh14Contig_35726	PREDICTED: putative kinase-like protein TMKL1-like
+298	None	Sh14Contig_29426	None
+299	None	Sh14Contig_70066	None
+301	StHeBC4_u_c12903_g29964_i1	Sh14Contig_37086	None
+302	StHeBC4_p_c12903_g39295_i4	Sh14Contig_19126	epoxide hydrolase 2-like
+305	StHeBC4_u_c12903_g1736_i13	Sh14Contig_29803	None
+306	None	Sh14Contig_29803	None
+309	StHeBC4_p_c12903_g6843_i1	Sh14Contig_4375	translation initiation factor eif-2b subunit delta-like
+314	StHeBC4_u_c12903_g1736_i7	Sh14Contig_28260	None
+315	StHeBC4_p_c12903_g38577_i4	Sh14Contig_21342	None
+317	StHeBC4_p_c25304_g0_i1	Sh14Contig_5367	serine threonine-protein kinase pbs1-like
+318	StHeBC4_u_c12903_g1736_i12	Sh14Contig_28260	None
+319	StHeBC4_p_c12903_g7992_i1	Sh14Contig_22515	poly -specific ribonuclease parn
+320	StHeBC4_u_c12903_g4208_i1	Sh14Contig_47575	None
+323	StHeBC4_p_c11471_g0_i1	Sh14Contig_66224	None
+326	StHeBC4_p_c12903_g40108_i1	Sh14Contig_17925	upf0326 protein at4g17486-like
+328	StHeBC4_p_c26825_g3_i2	Sh14Contig_30816	unnamed protein product
+330	StHeBC4_u_c17841_g0_i1	Sh14Contig_54135	None
+333	StHeBC4_h_c12903_g30936_i1	Sh14Contig_28702	copia LTR rider
+334	None	Sh14Contig_37720	None
+335	StHeBC4_p_c12903_g10585_i1	Sh14Contig_12790	None
+336	StHeBC4_u_c14956_g0_i2	Sh14Contig_3380	None
+337	StHeBC4_u_c12903_g19836_i1	Sh14Contig_44128	None
+339	StHeBC4_p_c12903_g9452_i3	Sh14Contig_68177	None
+342	StHeBC4_p_c21038_g1_i1	Sh14Contig_46012	None
+343	StHeBC4_u_c12903_g35474_i11	Sh14Contig_4481	None
+345	StHeBC4_p_c12903_g15810_i1	Sh14Contig_12790	None
+346	StHeBC4_u_c12903_g1736_i7	Sh14Contig_28260	None
+353	StHeBC4_u_c12903_g34427_i1	Sh14Contig_61194	None
+355	StHeBC4_p_c18569_g2_i14	Sh14Contig_67725	None
+361	StHeBC4_u_c22214_g0_i2	Sh14Contig_43769	None
+362	StHeBC4_p_c18975_g4_i3	Sh14Contig_77966	hypothetical protein VITISV_037041
+364	StHeBC4_p_c22472_g0_i1	Sh14Contig_63886	predicted protein
+365	StHeBC4_u_c24133_g4_i1	Sh14Contig_30270	None
+367	StHeBC4_u_c12903_g12274_i1	Sh14Contig_5997	None
+371	None	Sh14Contig_267	None
+373	StHeBC4_u_c12903_g34427_i3	Sh14Contig_31554	None
+381	StHeBC4_p_c12903_g33372_i2	Sh14Contig_18809	serine threonine protein kinase
+382	StHeBC4_p_c12903_g12842_i2	Sh14Contig_58393	hypothetical protein VITISV_012059
+388	StHeBC4_p_c12903_g13577_i4	Sh14Contig_4336	retrotransposon unclassified
+392	StHeBC4_u_c12903_g34427_i9	Sh14Contig_46360	None
+393	StHeBC4_u_c20739_g0_i7	Sh14Contig_30629	None
+395	None	Sh14Contig_64863	None
+396	StHeBC4_u_c18975_g2_i1	Sh14Contig_7369	None
+398	StHeBC4_u_c3227_g1_i1	Sh14Contig_65419	None
+399	StHeBC4_u_c18360_g0_i1	Sh14Contig_44903	None
+400	StHeBC4_p_c12903_g6756_i1	Sh14Contig_1062	None
+401	StHeBC4_p_c12903_g20268_i2	Sh14Contig_73193	None
+402	StHeBC4_p_c12903_g15476_i8	Sh14Contig_78156	None
+403	StHeBC4_u_c12903_g29964_i1	Sh14Contig_35346	None
+405	None	Sh14Contig_62455	None
+408	None	Sh14Contig_11292	None
+410	StHeBC4_p_c12903_g43157_i2	Sh14Contig_5125	None
+411	None	Sh14Contig_71030	None
+412	StHeBC4_u_c12903_g18073_i1	Sh14Contig_20326	None
+413	StHeBC4_p_c17480_g0_i1	Sh14Contig_62447	None
+414	StHeBC4_p_c18975_g4_i6	Sh14Contig_44012	F7F22.15, related
+415	StHeBC4_p_c12903_g32577_i4	Sh14Contig_50541	None
+417	None	Sh14Contig_78156	None
+419	StHeBC4_u_c12903_g32032_i1	Sh14Contig_20326	None
+420	StHeBC4_u_c12903_g25724_i1	Sh14Contig_32318	None
+421	StHeBC4_u_c13414_g0_i1	Sh14Contig_61194	None
+423	None	Sh14Contig_43845	None
+426	None	Sh14Contig_37580	None
+437	StHeBC4_u_c12903_g1736_i12	Sh14Contig_28260	None
+445	StHeBC4_p_c12903_g17146_i3	Sh14Contig_34580	None
+446	StHeBC4_p_c12903_g33830_i2	Sh14Contig_22568	None
+447	StHeBC4_p_c12903_g18700_i3	Sh14Contig_2850	None
+450	None	Sh14Contig_61087	retrotransposon protein, putative, Ty3-gypsy subclass
+453	StHeBC4_p_c12903_g208_i2	Sh14Contig_7920	None
+454	StHeBC4_u_c14380_g6_i22	Sh14Contig_20089	None
+456	StHeBC4_p_c12903_g22518_i1	Sh14Contig_39552	None
+460	StHeBC4_u_c18188_g0_i1	Sh14Contig_30718	retrotransposon protein, putative, unclassified, expressed
+463	StHeBC4_u_c12903_g35782_i1	Sh14Contig_27773	None
+464	None	Sh14Contig_53940	None
+466	None	Sh14Contig_29803	None
+237	StHeBC4_p_c20119_g0_i1	None	None
+145	StHeBC4_p_c12903_g26306_i42	None	None
+431	StHeBC4_u_c12903_g15888_i8	None	None
+139	StHeBC4_u_c12903_g34326_i2	None	None
+270	StHeBC4_u_c22214_g0_i5	None	None
+41	StHeBC4_u_c12903_g32907_i15	None	None
+1	StHeBC4_p_c15477_g0_i2	None	None
+71	StHeBC4_p_c12903_g18330_i2	None	None
+152	StHeBC4_u_c20631_g2_i1	None	None
+356	StHeBC4_u_c18975_g1_i1	None	None
+57	StHeBC4_p_c12903_g33550_i2	None	None
+107	StHeBC4_u_c20348_g0_i3	None	None
+104	StHeBC4_u_c19161_g0_i1	None	None
+55	StHeBC4_p_c18860_g2_i3	None	None
+159	StHeBC4_p_c12903_g5434_i1	None	None
+46	StHeBC4_p_c12903_g34427_i2	None	None
+143	StHeBC4_u_c12903_g14239_i1	None	None
+308	StHeBC4_p_c12903_g16488_i2	None	None
+105	StHeBC4_u_c20110_g5_i1	None	None
+36	StHeBC4_u_c17278_g0_i2	None	None
+300	StHeBC4_p_c18569_g0_i2	None	None
+249	StHeBC4_p_c12903_g15860_i11	None	None
+340	StHeBC4_u_c12903_g16409_i1	None	None
+368	StHeBC4_p_c12903_g5042_i2	None	None
+321	StHeBC4_u_c12903_g42940_i10	None	None
+241	StHeBC4_u_c18975_g1_i1	None	None
+349	StHeBC4_u_c12903_g34427_i1	None	None
+376	StHeBC4_u_c13012_g0_i1	None	None
+21	StHeBC4_u_c20371_g0_i1	None	None
+377	StHeBC4_u_c22472_g0_i4	None	None
+468	StHeBC4_u_c12903_g34431_i3	None	None
+238	StHeBC4_p_c18860_g2_i4	None	None
+42	StHeBC4_p_c12903_g15230_i2	None	None
+352	StHeBC4_u_c18860_g2_i48	None	None
+338	StHeBC4_p_c12903_g8484_i1	None	None
+390	StHeBC4_u_c18238_g1_i1	None	None
+133	StHeBC4_u_c25350_g7_i2	None	None
+7	StHeBC4_u_c12903_g29135_i2	None	None
+53	StHeBC4_u_c13414_g0_i1	None	None
+214	StHeBC4_p_c16184_g0_i1	None	None
+344	StHeBC4_p_c12903_g27140_i4	None	None
+285	StHeBC4_p_c12903_g18100_i3	None	None
+432	StHeBC4_p_c26242_g21_i7	None	None
+72	StHeBC4_u_c12903_g15860_i5	None	None
+296	StHeBC4_p_c12903_g33449_i1	None	None
+329	StHeBC4_u_c13012_g0_i1	None	None
+207	StHeBC4_h_c10541_g0_i1	None	None
+316	StHeBC4_u_c12903_g33428_i2	None	None
+407	StHeBC4_u_c12903_g1552_i1	None	None
+40	StHeBC4_p_c16622_g1_i2	None	None
+325	StHeBC4_p_c12903_g8677_i10	None	None
+374	StHeBC4_u_c10677_g0_i1	None	None
+357	StHeBC4_p_c12903_g40108_i1	None	None
+79	StHeBC4_u_c12903_g15860_i5	None	None
+457	StHeBC4_p_c19033_g0_i1	None	None
+188	StHeBC4_p_c12903_g33830_i1	None	None
+429	StHeBC4_p_c12903_g11366_i6	None	None
+313	StHeBC4_u_c12903_g25897_i6	None	None
