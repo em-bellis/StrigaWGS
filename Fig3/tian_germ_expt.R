@@ -28,8 +28,48 @@ p1 <- ggplot(df, aes(x=DS, y=ORO, col=Site, pch = Host)) +
     scale_color_manual(values = paste0(jcolors(palette="pal5"))[c(2,4)], labels = c("Homa Bay", "Kisii")) +
     scale_shape_discrete(labels = c("finger millet", "maize", "sorghum"))
 
+pdf('Fig3.pdf', width = 3, height = 3)
 p1 #plot figure
+dev.off()
 
 ####perform stats to see if Germination rates to different hormones are statistically different between parasites from different sites or collected from different hosts
 hist(df$DS-df$ORO) #not normally distributed. If you have time can look into other methods for analysis 
 summary(lm(df$DS/df$ORO ~ df$Site + df$Host)) #this is a simple ANOVA based on the difference in germination rate in response to the two different hormones. Not the best choice of approach given above but would be fine for a poster
+
+# ken3
+ken3 <- ken %>% group_by(Sample, Site, Host, Treatment)
+ken3.pos <- subset(ken3, Site == "Kisii" | Site=="HomaBay") #subset to remove positive and negative controls before plotting
+ken3.pos$Host <- as.factor(ken3.pos$Host)
+ken3.pos$Treatment <- as.factor(ken3.pos$Treatment)
+ken3.pos$Site <- as.factor(ken3.pos$Site)
+
+# glmm with random effect of sample
+library(lme4)
+mod1 <- glmer(cbind(Germinated, Ungerminated) ~ Site + Host + Treatment + (1|Sample), 
+      data = ken3.pos,
+      family = 'binomial')
+
+mod2 <- glmer(cbind(Germinated, Ungerminated) ~ Site + Host  + (1|Sample), 
+              data = ken3.pos,
+              family = 'binomial') # p = 0.004
+
+mod3 <- glmer(cbind(Germinated, Ungerminated) ~ Treatment + Host  + (1|Sample), 
+              data = ken3.pos,
+              family = 'binomial') # p = 0.011
+
+mod4 <- glmer(cbind(Germinated, Ungerminated) ~ Site + Treatment  + (1|Sample), 
+              data = ken3.pos,
+              family = 'binomial') # p = 0.24
+
+####### keep treatment and site but not host
+mod5 <- glmer(cbind(Germinated, Ungerminated) ~ Treatment  + (1|Sample), 
+              data = ken3.pos,
+              family = 'binomial') # p = 0.05 to keep site
+
+mod6 <- glmer(cbind(Germinated, Ungerminated) ~ Site + (1|Sample), 
+              data = ken3.pos,
+              family = 'binomial') # p < 0.01 to keep treatment
+
+
+
+

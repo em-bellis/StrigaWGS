@@ -98,7 +98,7 @@ p <- ggplot(df, aes(x=Axis1, y=Axis2, col=Site, pch=Host)) +
   scale_colour_manual(values=paste0(jcolors(palette="pal5"))) +
   facet_wrap(.~part)
 
-pdf(file="Fig2.pdf",width=3,height=3)
+pdf(file="Fig2.pdf",width=5,height=5)
 p
 dev.off()
 ```
