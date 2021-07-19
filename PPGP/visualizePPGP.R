@@ -23,7 +23,7 @@ averageTPM <- function(stage_idx) {
 ### create new df with average TPM for each stage
 stages <- c('0','1','2','3','4','5','6_1','6_2')
 R1 <- read.table(paste0('StHe_',stages[1],'_R1.genes.results'), header = T)
-df <- select(R1, c(gene_id, transcript_id.s.))
+df <- dplyr::select(R1, c(gene_id, transcript_id.s.))
 for (i in 1:length(stages)) {
   df$new <- as.numeric(averageTPM(i))
   colnames(df)[i + 2] <- paste0('Stage_',stages[i])
@@ -40,6 +40,8 @@ for (i in 1:nrow(df)) {
     }
   }
 }
+
+write.table(df, file = "PPGPII_avgTPM.txt", sep = "\t", row.names = F, quote = F)
 # df <- df %>% pivot_longer(cols = 3:10)
 # df$name <- as.factor(df$name)
 # df$gene_id <- as.factor(df$gene_id)
