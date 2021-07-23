@@ -56,7 +56,7 @@ myPal <- colorRampPalette(c("white","blue","gold", "orange", "red"))
 pdf("Fig1D_IBD.pdf", width = 3, height=3)
 plot(geomat,k31.dist, pch=20,cex=.5, xlab="Distance (km)", alpha = 0.5, ylab="k-mer distance")
 image(dens, col=transp(myPal(300),.7), add=TRUE)
-abline(lm(k21.dist ~ geomat))
+abline(lm(k31.dist ~ geomat))
 dev.off()
 ```
 
@@ -82,7 +82,8 @@ p <- ggplot(k31_df, aes(x = km, y = dist)) +
   geom_smooth(method='lm', se = F, lty = 2) +
   theme_classic() +
   xlab("Geographic distance (km)") +
-  ylab("Genetic distance") # these are the self comparisons
+  ylab("Genetic distance") +
+  facet_grid(.~Same_host)# these are the self comparisons
 mod1 <- lm(dist ~ km, data = k31_df)
 
 pdf("geo_v_gen.pdf", width = 3, height = 1.75)

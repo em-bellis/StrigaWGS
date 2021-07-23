@@ -29,6 +29,39 @@ for (i in 1:length(stages)) {
   colnames(df)[i + 2] <- paste0('Stage_',stages[i])
 }
 
+### plot the chemocyanin
+df_sub <- subset(df, (gene_id == "StHeBC4_c11261_g0")) %>%
+  pivot_longer(cols = 3:10)
+
+p <- ggplot(df_sub, aes(x = name, y = value, group = gene_id)) +
+  geom_line() +
+  geom_point() +
+  ylab("TPM") +
+  xlab("Stage") +
+  theme_light_bg() +
+  scale_x_discrete(labels=c("Stage_0" = 0, "Stage_1" = "1",
+                              "Stage_2" = "2", "Stage_3" = "3", "Stage_4" = "4", "Stage_5" = "5",
+                            "Stage_6_1" = "6.1", "Stage_6_2" = "6.2"))
+pdf("cc_exp.pdf", width = 2.7, height = 1.3)
+p
+dev.off()
+
+df_sub <- subset(df, (gene_id =="StHeBC4_c12587_g2")) %>%
+  pivot_longer(cols = 3:10)
+
+p <- ggplot(df_sub, aes(x = name, y = value, group = gene_id)) +
+  geom_line() +
+  geom_point() +
+  ylab("TPM") +
+  xlab("Stage") +
+  theme_light_bg() +
+  scale_x_discrete(labels=c("Stage_0" = 0, "Stage_1" = "1",
+                            "Stage_2" = "2", "Stage_3" = "3", "Stage_4" = "4", "Stage_5" = "5",
+                            "Stage_6_1" = "6.1", "Stage_6_2" = "6.2"))
+pdf("pm_exp.pdf", width = 2.7, height = 1.3)
+p
+dev.off()
+
 ### add column to color by whether is host-associated or not
 ha <- read.table('PPGP_hits.list')
 df$type <- 'NA'
@@ -42,14 +75,19 @@ for (i in 1:nrow(df)) {
 }
 
 write.table(df, file = "PPGPII_avgTPM.txt", sep = "\t", row.names = F, quote = F)
-# df <- df %>% pivot_longer(cols = 3:10)
-# df$name <- as.factor(df$name)
-# df$gene_id <- as.factor(df$gene_id)
-# df$transcript_id.s. <- as.factor(df$transcript_id.s.)
-# df$type <- as.factor(df$type)
-# 
-# df_host <- subset(df, type == "Host-associated")
 
 ### figure out expression trajectory clusters using
 # https://github.com/PrincetonUniversity/DP_GP_cluster
 
+# just host-associated
+df_ha <- subset(df, type != "NA") %>% 
+  pivot_longer(cols = 3:10)
+df_ha$name <- as.factor(df_ha$name)
+df_ha$gene_id <- as.factor(df_ha$gene_id)
+df_ha$transcript_id.s. <- as.factor(df_ha$transcript_id.s.)
+df_ha$type <- as.factor(df_ha$type)
+
+ggplot(df_ha, aes(x = name, y = (value), group = name)) + 
+  geom_boxplot() +
+  theme(legend.position = "none")
+# df_host <- subset(df, type == "Host-associated")
