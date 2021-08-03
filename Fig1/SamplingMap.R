@@ -18,7 +18,7 @@ data(World)
 
 ### data points from sampling
 modern <- read.csv("Striga_GPS_sequenced.csv", header=T)
-modern <- modern %>% dplyr::select(Lat, Lon, Site, Host) %>% unique()
+modern <- modern %>% dplyr::select(Lat, Lon, Site, Host) %>% unique() %>% filter(Host == "maize") %>% filter(Site != "Mumias2")
 modern$Site <- as.factor(str_replace(modern$Site, "2","") %>% str_trim())
 modern$Type <- "modern"
 
@@ -37,7 +37,7 @@ sg <- bb_poly(mod_bb + c(-1,-1,1,1))
 asp <- (mod_bb$ymax - mod_bb$ymin)/(mod_bb$xmax - mod_bb$xmin)
 
 ### base map of Kenya
-kenya<-getData("GADM", country="KE", level=1)
+kenya<-raster::getData("GADM", country="KE", level=1)
 kenya_sf <- as(kenya, Class="sf")
 kenya_smooth <- simplify_shape(kenya_sf, 0.01)
 
@@ -49,7 +49,7 @@ kenya_smooth <- simplify_shape(kenya_sf, 0.01)
 mainmap <- tm_shape(kenya_smooth, bbox=mod_bb) +
   tm_polygons() +
 tm_shape(modern_df) + 
-  tm_symbols(size=0.7, col="Site", alpha=0.7, jitter=0.1, palette=jcolors(palette="pal5"), shape="Host", legend.col.show = F) +
+  tm_symbols(size=0.7, col="Site", alpha=0.7, jitter=0.1, palette=jcolors(palette="pal5"), legend.col.show = F) +
   tm_text("Site", remove.overlap = T, xmod = 1.5, ymod = 1, size = 0.75) +
 tm_scale_bar(position = c("left","bottom")) +
   tm_layout(legend.outside = T)
@@ -72,7 +72,7 @@ w <- 0.45
 h <- asp2 * w
 vp <- viewport(x=0.97, y=0.45, width = w, height=h, just=c("right", "top"))
 
-tmap_save(mainmap,filename="sampling.png",
+tmap_save(mainmap,filename="sampling.pdf",
           dpi=300, insets_tm=africa_inset, insets_vp=vp,
           height=asp*91, width=91, units="mm")
 

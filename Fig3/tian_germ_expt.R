@@ -70,6 +70,11 @@ mod6 <- glmer(cbind(Germinated, Ungerminated) ~ Site + (1|Sample),
               data = ken3.pos,
               family = 'binomial') # p < 0.01 to keep treatment
 
+summary(mod4)
+
+exp(0.78)/(1+exp(0.78)) # odds of germinatin for HB w/5DS
+exp(-1.206) # germ for kisii:hb is 0.3:1
+exp(-0.1628) # germ for oro:5DS is 0.85:1 
 
 
 
