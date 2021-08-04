@@ -93,15 +93,16 @@ km$pop <- "Kisii"
 kf$pop <- "Kisii"
 
 df <- rbind.data.frame(hm, hs, km, kf)
-haus <- subset(df, chromo == "StHeBC4_h_c11261_g0_i1" | 
-                 chromo == "StHeBC4_p_c12587_g2_i1")
+haus_1 <- subset(df, chromo == "StHeBC4_h_c11261_g0_i1")
+haus_2 <- subset(df, chromo == "StHeBC4_p_c12587_g2_i1")
 
-haus_names <- c(
-  "StHeBC4_h_c11261_g0_i1" = "chemocyanin\nprecursor", 
-  "StHeBC4_p_c12587_g2_i1" = "SGT1")
-p <- ggplot(haus, aes(x = position, y = knownEM, col = host)) +
-  geom_point(alpha = 0.4, size = 0.2) +
-  facet_grid(chromo~pop, labeller = labeller(chromo = haus_names)) +
+#haus_names <- c(
+#  "StHeBC4_h_c11261_g0_i1" = "chemocyanin\nprecursor", 
+#  "StHeBC4_p_c12587_g2_i1" = "SGT1")
+
+p <- ggplot(haus_1, aes(x = position, y = knownEM, col = host)) +
+  geom_point(alpha = 0.4, size = 0.25) +
+  facet_grid(.~pop) + #, labeller = labeller(chromo = haus_names)) +
   scale_color_manual(name = "Host", values = paste0(jcolors(palette="pal5")[c(1,3,2)])) +
   theme_minimal() +
   theme(panel.grid.minor = element_blank(), 
@@ -111,7 +112,23 @@ p <- ggplot(haus, aes(x = position, y = knownEM, col = host)) +
         axis.text.x = element_text(angle = 90, hjust = 1.25)) +
   ylab("Minor Allele Frequency")
 
-pdf("Fig5.pdf", width = 3, height = 3.5)
+pdf("Fig5_chemo.pdf", width = 3, height = 2)
+p
+dev.off()
+
+p <- ggplot(haus_2, aes(x = position, y = knownEM, col = host)) +
+  geom_point(alpha = 0.4, size = 0.25) +
+  facet_grid(.~pop) + #, labeller = labeller(chromo = haus_names)) +
+  scale_color_manual(name = "Host", values = paste0(jcolors(palette="pal5")[c(1,3,2)])) +
+  theme_minimal() +
+  theme(panel.grid.minor = element_blank(), 
+        panel.grid.major.x = element_blank(),
+        strip.text.y = element_text(size = 7),
+        legend.position = 'bottom',
+        axis.text.x = element_text(angle = 90, hjust = 1.25)) +
+  ylab("Minor Allele Frequency")
+
+pdf("Fig5_sgt.pdf", width = 3, height = 2)
 p
 dev.off()
 
