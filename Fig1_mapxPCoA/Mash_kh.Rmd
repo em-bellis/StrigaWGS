@@ -23,7 +23,7 @@ colnames(k31) <- c("S1","S2","dist")
 
 ## Run PCoA for each dataset
 ```{r}
-meta <- read.csv('../Fig1/Striga_GPS.csv', header=T)
+meta <- read.csv('Fig1_mapxPCoA/Striga_GPS.csv', header=T)
 meta$Site <- as.factor(str_replace(meta$Site, "2","") %>% str_trim())
 meta <- meta %>% filter(SampleID %in% unique(k31$S1))
 
