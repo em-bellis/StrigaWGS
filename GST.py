@@ -1,3 +1,5 @@
+## author: Alan Kronberger
+
 popSizes = [12, 12]
 temp = 0
 for i in range(len(popSizes)):
