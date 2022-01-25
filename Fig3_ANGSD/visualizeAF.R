@@ -56,7 +56,7 @@ shtl_names <- c(
 
 p <- ggplot(sl, aes(x = position, y = AF, col = pop)) +
   geom_point(size = 0.1, alpha = 0.5) +
-  facet_grid(chromo~., labeller = labeller(chromo = shtl_names)) +
+  facet_wrap(chromo~., labeller = labeller(chromo = shtl_names)) +
   ylim(c(0,1)) +
   theme_minimal() +
   theme(panel.grid.minor = element_blank(), 
@@ -72,7 +72,7 @@ p2 <-  ggplot(pm, aes(x = position, y = AF, col = pop)) +
   scale_colour_discrete(name = "Population") +
   ylab("Allele Frequency\nDifference")
 
-pdf('FigS2_ShHTL.pdf', width = 4, height = 8)
+pdf('FigS2_ShHTL.pdf', width = 6, height = 4)
 p
 dev.off()
 
