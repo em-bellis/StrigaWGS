@@ -1,3 +1,5 @@
+## author: Alan Kronberger
+
 files = ["pvals_case_top_merged_sorted.txt", "pvals_control_top_merged_sorted.txt"]
 output = open("output.txt", "w")
 for file in files:
