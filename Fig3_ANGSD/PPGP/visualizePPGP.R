@@ -61,33 +61,3 @@ p <- ggplot(df_sub, aes(x = name, y = value, group = gene_id)) +
 pdf("pm_exp.pdf", width = 2.7, height = 1.3)
 p
 dev.off()
-
-### add column to color by whether is host-associated or not
-ha <- read.table('PPGP_hits.list')
-df$type <- 'NA'
-for (i in 1:nrow(df)) {
-  transcripts <- strsplit(df$transcript_id.s.[i], ",")[[1]] # some have multiple listed
-  for (j in 1:length(transcripts)) {
-    if (transcripts[j] %in% ha$V1) {
-      df$type[i] <- 'Host-associated'
-    }
-  }
-}
-
-write.table(df, file = "PPGPII_avgTPM.txt", sep = "\t", row.names = F, quote = F)
-
-### figure out expression trajectory clusters using
-# https://github.com/PrincetonUniversity/DP_GP_cluster
-
-# just host-associated
-df_ha <- subset(df, type != "NA") %>% 
-  pivot_longer(cols = 3:10)
-df_ha$name <- as.factor(df_ha$name)
-df_ha$gene_id <- as.factor(df_ha$gene_id)
-df_ha$transcript_id.s. <- as.factor(df_ha$transcript_id.s.)
-df_ha$type <- as.factor(df_ha$type)
-
-ggplot(df_ha, aes(x = name, y = (value), group = name)) + 
-  geom_boxplot() +
-  theme(legend.position = "none")
-# df_host <- subset(df, type == "Host-associated")
