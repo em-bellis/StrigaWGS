@@ -41,13 +41,13 @@ geomat_mat <- geomat
 geomat <- as.dist(geomat)
 ```
 
-# run mantel test
+## run mantel test
 ```{r}
 ibd <- mantel.randtest(k31.dist,geomat)
 plot(ibd) # significant IBD, p=0.003
 ```
 
-# is this due to clines or clusters?
+## is this due to clines or clusters?
 ```{r}
 library(MASS)
 dens <- kde2d(geomat,k31.dist, n=300)
