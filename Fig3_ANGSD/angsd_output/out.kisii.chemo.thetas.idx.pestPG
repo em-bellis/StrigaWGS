@@ -1,0 +1,2 @@
+#(indexStart,indexStop)(firstPos_withData,lastPos_withData)(WinStart,WinStop)	Chr	WinCenter	tW	tP	tF	tH	tL	Tajima	fuf	fud	fayh	zeng	nSites
+(0,1054)(1,1055)(0,1055)	NODE_132909_length_1055_cov_32.632	527	5.024135	2.352516	0.000000	0.000000	0.000000	-1.728408	0.670038	1.868100	0.343832	-0.709547	1054
