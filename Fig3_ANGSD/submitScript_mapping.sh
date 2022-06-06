@@ -9,7 +9,6 @@
 cd $SLURM_SUBMIT_DIR 
 module load bwa
 module load samtools
-module load gsl
 
 ### mapping w/bwa
 bwa mem -t 32 StrigaHer_500.fasta $R1 $R2 >$SAMPLE.pe.sam
