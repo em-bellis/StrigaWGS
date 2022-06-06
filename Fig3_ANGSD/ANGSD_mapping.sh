@@ -16,5 +16,3 @@ bwa mem -t 32 StrigaHer_500.fasta $R1 $R2 >$SAMPLE.pe.sam
 samtools view -b -F 4 -q 20 -@ 32 $SAMPLE.pe.sam | samtools sort -@ 32 - >$SAMPLE.sort.bam
 samtools index $SAMPLE.sort.bam
 rm -rf $SAMPLE.pe.sam
-
-### 
