@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1654722813226.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3029462467",
+    "id" : "E984FC84",
+    "lastKnownWriteTime" : 1654727380,
+    "last_content_update" : 1654727380275,
+    "path" : "~/Documents/GitHub/StrigaWGS/Fig1_mapxPCoA/kinship_mat.R",
+    "project_path" : "kinship_mat.R",
+    "properties" : {
+        "cursorPosition" : "26,0",
+        "scrollLine" : "17"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

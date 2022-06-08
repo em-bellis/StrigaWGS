@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1654724419029.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "3734ED76",
+    "lastKnownWriteTime" : 1643809534,
+    "last_content_update" : 1643809534,
+    "path" : "~/Documents/GitHub/StrigaWGS/Fig1_mapxPCoA/SamplingMap.R",
+    "project_path" : "SamplingMap.R",
+    "properties" : {
+        "cursorPosition" : "21,73",
+        "scrollLine" : "17"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
