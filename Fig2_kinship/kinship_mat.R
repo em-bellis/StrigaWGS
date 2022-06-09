@@ -22,6 +22,6 @@ ann_colors <- list(Host = c('finger millet' = "#1B9E77", maize = "aquamarine", s
 p <- pheatmap(kin, color = magma(100), annotation_col = host_df, annotation_row = site_df, show_rownames = F, border_color = NA,  
          annotation_colors = ann_colors, legend = F, fontsize_col = 4)
            
-pdf("FigX_heatmap.pdf", height = 4, width = 6.5)      
+pdf("Fig2_heatmap.pdf", height = 4, width = 6.5)      
 p         
 dev.off()
