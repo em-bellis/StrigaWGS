@@ -5,14 +5,14 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "3029462467",
+    "hash" : "2820947386",
     "id" : "E984FC84",
-    "lastKnownWriteTime" : 1654727380,
-    "last_content_update" : 1654727380275,
+    "lastKnownWriteTime" : 1654779497,
+    "last_content_update" : 1654779497752,
     "path" : "~/Documents/GitHub/StrigaWGS/Fig1_mapxPCoA/kinship_mat.R",
     "project_path" : "kinship_mat.R",
     "properties" : {
-        "cursorPosition" : "26,0",
+        "cursorPosition" : "24,0",
         "scrollLine" : "17"
     },
     "read_only" : false,
