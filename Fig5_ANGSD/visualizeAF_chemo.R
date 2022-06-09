@@ -2,8 +2,8 @@ library(tidyverse)
 library(jcolors)
 
 # read in files
-km <- read.table('ang.kisii_mz.out.mafs', header = T)
-kf <- read.table('ang.kisii_fm.out.mafs', header = T) 
+km <- read.table('Fig5_ANGSD/angsd_output/ang.kisii_mz.out.mafs', header = T)
+kf <- read.table('Fig5_ANGSD/angsd_output/ang.kisii_fm.out.mafs', header = T) 
 
 # haustorium loci of interest
 km$host <- "maize"
@@ -25,7 +25,7 @@ p <- ggplot(haus_1, aes(x = position, y = knownEM, col = nInd)) +
         axis.text.x = element_text(angle = 90, hjust = 1.25)) +
   ylab("Minor Allele Frequency")
 
-pdf("Fig3_chemo.pdf", width = 3, height = 2.5)
+pdf("Fig5_chemo.pdf", width = 3, height = 2.5)
 p
 dev.off()
 
