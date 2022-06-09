@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1654784718190.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3205889564",
+    "id" : "903FFB58",
+    "lastKnownWriteTime" : 1654784747,
+    "last_content_update" : 1654784747773,
+    "path" : "~/Documents/GitHub/StrigaWGS/Fig5_ANGSD/tajD.R",
+    "project_path" : "Fig5_ANGSD/tajD.R",
+    "properties" : {
+        "cursorPosition" : "38,9",
+        "scrollLine" : "30"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
