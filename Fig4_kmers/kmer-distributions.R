@@ -5,6 +5,7 @@ pop = c("kisii","homabay")
 
 ### load and tidy input data
 for (i in 1:2) {
+  # file too large for github repo
   gst <- read.table(paste0('~/Desktop/Projects/StigaxSorghum/KenyaWGS/alan/',pop[i],'/GST_Output.txt'))
   colnames(gst) <- c('kmer','HS','HT','DST','GST')
   gst$pop <- paste0(pop[i])
