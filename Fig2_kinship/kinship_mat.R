@@ -1,6 +1,7 @@
 ### plot the kinship matrix based on pairwise distances estimated from ngsDist
 
 library(tidyverse)
+library(viridis)
 library(pheatmap)
 
 kin <- read.table('Fig2_kinship/data/ALL.dist', skip = 2)
@@ -12,10 +13,10 @@ rownames(kin) <- as.factor(labs$SampleID)
 colnames(kin) <- as.factor(labs$SampleID)
 
 ### for annotations
-host_df = data.frame(as.factor("Host" = labs$Host))
+host_df = data.frame("Host" = labs$Host)
 rownames(host_df) = rownames(kin)
 
-site_df = data.frame(as.factor("Site" = labs$Site))
+site_df = data.frame("Site" = labs$Site)
 rownames(site_df) = rownames(kin)
 
 ann_colors <- list(Host = c('finger millet' = "#1B9E77", maize = "aquamarine", sorghum = "plum", sugarcane = "darkorchid"),
