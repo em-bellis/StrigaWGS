@@ -27,7 +27,7 @@ p <- ggplot(gst_all, aes(x = GST, col = pop)) +
   theme(legend.position = c(0.8, 0.8))
 
 ### graph representative k-mer distribution for individual SH046
-sh46 <- read.csv('Fig4_kmers/SH046.kmer.hist', header = T)
+sh46 <- read.csv('Fig4_kmers/data/SH046.kmer.hist', header = T)
 
 q <- ggplot(sh46, aes(x = abundance, y = count)) +
   geom_line() +
