@@ -5,7 +5,7 @@ library(tidyverse)
 tajd <- read.table('Fig5_ANGSD/angsd_output/kisii.theta1x1kb.gz.pestPG', header = T, comment.char="")
 chemo <- read.table('out.kisii.chemo.thetas.idx.pestPG', header = T, comment.char="")
 tajd <- rbind.data.frame(tajd, chemo)
-fst <- read.table('kf.km.fst_1x1', row.names = NULL, header = T)
+fst <- read.table('Fig5_ANGSD/angsd_output/kf.km.fst_1x1', row.names = NULL, header = T)
 colnames(fst) <- c('region','Chr','WinCenter','Nsites','Fst')
 
 # combine fst and tajd
