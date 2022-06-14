@@ -1,6 +1,6 @@
 # StrigaWGS
  
-This repository contains code necessary to reproduce figures and analyses presented in Bellis *et al.* (2022).
+This repository contains code necessary to reproduce figures and analyses presented in [Bellis *et al.* (2022)](https://www.biorxiv.org/content/10.1101/2022.02.01.478712v1).
 
 - **Fig1_mapxPCoA** contains code and accessory data files to run PCoA, produce map of sequenced samples, and evaluate IBD. 
 - **Fig2_kinship** contains code and accessory files to map reads to reference, calculate genetic distances, and produce heatmap of values. 
